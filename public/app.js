@@ -11,9 +11,9 @@ async function loadChampion(){
         const champion_details = await response.json();
         document.getElementById("champion_portrait").src = `https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/${championSelector}.png`;
         document.getElementById("championName").textContent = champion_details.name;
-        //document.getElementById("passive_img").src = champion_details.image.sprite;
-        //document.getElementById("passive_name").textContent = champion_details.passive.name;
-        //document.getElementById("passive_description").textContent = champion_details.passive.description;
+        //document.getElementById("passive_img").src = champion_details.data.championSelector.image.sprite;
+        document.getElementById("passive_name").textContent = champion_details.data[championSelector].passive.name;
+        //document.getElementById("passive_description").textContent = champion_details.data.passive.description;
         //document.getElementById("ability_1_img").src = champion_details.spells[0].image.sprite;
         //document.getElementById("ability_1_name").textContent = champion_details.spells[0].name;
         //document.getElementById("abiltiy_1_description").textContent = champion_details.spells[0].tooltip;
