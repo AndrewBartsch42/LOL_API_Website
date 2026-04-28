@@ -84,8 +84,14 @@ th {
 
 td {
     text-transform: capitalize;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .hidden {
     display: none;
+}
+
+.champion_details {
+    width: auto;
 }
