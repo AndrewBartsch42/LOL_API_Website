@@ -25,7 +25,7 @@ This project is a web application that connects to an external API to retrieve a
 
 ---
 
-## How It Works (Simple Explanation)
+## How It Works
 
 1. The website makes a request to an API endpoint
 2. The API returns data
